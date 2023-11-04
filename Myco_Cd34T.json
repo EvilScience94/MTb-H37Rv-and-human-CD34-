@@ -1,0 +1,25 @@
+{
+  "net_names": [
+    "Inputs/CD34_gene.txt",
+    "Inputs/Myco_gene.txt",
+    "Inputs/Myco_TFTF.txt",
+	"Inputs/CD34Myco_litEvi.txt"
+  ],
+  "delimiter": "\t",
+  "out_name": "Outputs/MycoHuman_Tint04",
+  "epochs": 2123,
+  "batch_size": 2048,
+  "learning_rate": 0.0005830944755717023,
+  "gat_shapes": {
+    "dimension": 68,
+    "n_heads": 10,
+    "n_layers": 3
+  },
+  "embedding_size": 512,
+  "save_model": true,
+  "tensorboard":{
+    "training": true,
+	"embedding": true,
+    "log_dir": "runs/Cd3404"
+	}
+}

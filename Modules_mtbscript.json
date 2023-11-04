@@ -1,0 +1,45 @@
+{
+    "networks": [
+        {
+            "name": "CD34_weighted gene",
+            "path": "Inputs/CD34_gene.txt",
+            "delimiter": " "
+        },
+        {
+            "name": "Myco_weighted gene",
+            "path": "Inputs/Myco_gene.txt",
+            "delimiter": " "
+        },
+        {
+            "name": "Myco_TF network",
+            "path": "Inputs/Myco_TFTF.txt",
+            "delimiter": " "
+        }
+    ],
+    "features": [
+        {
+            "name": "BIONIC Features",
+            "path": "Outputs/MtbHum_features.csv",
+            "delimiter": ","
+        }
+    ],
+    "standards": [
+        {
+            "name": "MtbHum_Module_Eval",
+            "task": "module_detection",
+            "path": "Evals_module.json",
+            "samples": 10,
+            "methods": [
+                "average",
+                "single",
+                "complete"
+            ],
+            "metrics": [
+                "euclidean",
+                "cosine"
+            ],
+            "thresholds": 500
+        },
+    ],
+    "consolidation": "union"
+}
